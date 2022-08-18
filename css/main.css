@@ -834,6 +834,7 @@ footer b {
     a.update:nth-child(2) {
         margin-top: 18px;
     }
+    a.update:nth-child(4) {
         display: block;
     }
     a.update p {
