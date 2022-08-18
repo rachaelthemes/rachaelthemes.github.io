@@ -626,28 +626,26 @@ footer b {
 /* 1680px */
 
 @media (max-width: 1680px) {
-	 :root {
+    :root {
         --pad0: 20px;
         --pad1: 40px;
         --pad2: 80px;
         --pad3: 160px;
-	}
+    }
 }
 
 /* 1480px */
 
 @media (max-width: 1480px) {
-	 :root {
+    :root {
         --pad0: 15px;
         --pad1: 30px;
         --pad2: 60px;
         --pad3: 120px;
-	}
-
+    }
     a.update {
         width: calc((100% / 3) - var(--pad2) - 66px - (26px / 3));
     }
-    
     a.update p {
         -webkit-line-clamp: 5;
     }
@@ -669,16 +667,16 @@ footer b {
 /* 1280px */
 
 @media (max-width: 1280px) {
-	.hero {
+    .hero {
         background-size: 43%;
         background-position: 106% 8%;
-	}
-	.hero-left {
-	    width: 55%;
-	}
-	h1.hero-title {
-	    font-size: 3.5vw;
-	}
+    }
+    .hero-left {
+        width: 55%;
+    }
+    h1.hero-title {
+        font-size: 3.5vw;
+    }
     .theme-viewer {
         width: 45%;
     }
@@ -741,24 +739,24 @@ footer b {
         margin: 0;
     }
     section, .hero {
-	    border-radius: 0;
+        border-radius: 0;
     }
-	.hero {
+    .hero {
         background-size: 44%;
         background-position: 109% 9%;
-	}
-	.hero-left {
-	    width: 60%;
-	}
-	h1.hero-title {
+    }
+    .hero-left {
+        width: 60%;
+    }
+    h1.hero-title {
         font-size: 4.25vw;
-	}
+    }
     a.update {
         width: calc(50% - var(--pad2) - 46px);
     }
-	.section-title {
-	    display: none;
-	}
+    .section-title {
+        display: none;
+    }
     .theme-updates {
         display: none;
     }
@@ -780,12 +778,15 @@ footer b {
 /* 880px */
 
 @media (max-width: 880px) {
-	header nav a:not(#mobile-open) {
-		display: none;
-	}
-	#mobile-open {
-		display: inline;
-	}
+    header nav a:not(#mobile-open) {
+        display: none;
+    }
+    #mobile-open {
+        display: inline;
+    }
+    article {
+        max-width: 100%;
+    }
 }
 
 /* 780px */
@@ -794,9 +795,9 @@ footer b {
     .hero {
         background-image: none;
     }
-	.hero-left {
-	    width: 100%;
-	}
+    .hero-left {
+        width: 100%;
+    }
     h1.hero-title {
         font-size: 6.7vw;
     }
@@ -811,9 +812,9 @@ footer b {
     a.update:nth-child(2) {
         margin-top: 18px;
     }
-	a.update:nth-child(4) {
-	    display: block;
-	}
+    a.update:nth-child(4) {
+        display: block;
+    }
     a.update p {
         -webkit-line-clamp: 2;
     }
@@ -842,15 +843,15 @@ footer b {
     }
 }
 
-/* 480px */
+/* 660px */
 
-@media (max-width: 480px) {
-	 :root {
+@media (max-width: 660px) {
+    :root {
         --pad0: 10px;
         --pad1: 20px;
         --pad2: 40px;
         --pad3: 80px;
-	}
+    }
     h1.hero-title {
         font-size: 1.5em;
     }
