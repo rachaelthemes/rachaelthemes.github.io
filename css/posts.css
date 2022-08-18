@@ -327,3 +327,43 @@ img.ask-avatar {
 .next:not(:link) {
     visibility: hidden;
 }
+
+/* SCREEN SIZE */
+
+@media (max-width: 1480px) {
+    article {
+        width: 540px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sidebar {
+        display: none;
+    }
+    article {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 780px) {
+    section#posts {
+        padding: 0;
+    }
+    .posts {
+        margin: 0;
+    }
+    article {
+        border-width: 3px 0 0 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .post-date-notes span {
+        display: none;
+    }
+    .pagination {
+        border: solid var(--text);
+        border-width: 3px 0;
+        padding: var(--pad2);
+    }
+}
