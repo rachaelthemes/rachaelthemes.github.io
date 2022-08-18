@@ -211,6 +211,7 @@ section#posts.media-spacing .post-reblog-item > figure, section#posts.media-spac
 section#posts.media-spacing .post-content div.npf_row, section#posts.media-spacing .post div.npf_row, body div.npf_row, section#posts.media-spacing figure.tmblr-full {
     margin-left: 0;
     margin-right: 0;
+}
 
 .post-content div.npf_row .npf_col:first-child, .post-content div.npf_row figure.tmblr-full:first-child, .post div.npf_row .npf_col:first-child, .post div.npf_row figure.tmblr-full:first-child, body div.npf_row .npf_col:first-child, body div.npf_row figure.tmblr-full:first-child {
     padding-left: 0;
