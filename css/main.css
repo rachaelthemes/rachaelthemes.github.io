@@ -1,1 +1,135 @@
-/* coming soon */
+/* Fonts (Ellograph CF by Connary Fagen) */
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-200.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ellograph CF Extra';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-200-italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-300-italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-400-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-600.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-600-italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-700.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ellograph-cf';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-700-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Root */
+
+:root {
+    --pad0: 25px;
+    --pad1: 50px;
+    --pad2: 100px;
+    --pad3: 200px;
+    --text: #070908;
+    --bg1: #ffffff;
+    --bg2: #f6f8f5;
+    --bg3: rgba(0,0,0,0.05);
+    --gray: #acb0ae;
+    --a1: #33cf90;
+    --a2: #baf27d;
+    --a3: rgba(51,207,145,0.15);
+    --a4: rgba(186,242,125,0.15);
+}
+
+section.dark {
+    --text: #ffffff;
+    --bg1: #070908;
+    --bg2: #101412;
+    --bg3: rgba(255,255,255,0.1);
+    --gray: #545c58;
+    --a1: #baf27d;
+    --a2: #33cf90;
+	--a3: rgba(186,242,125,0.15);
+	--a4: rgba(51,207,145,0.15);
+}
+
+section.gray {
+    --bg1: #f6f8f5;
+    --bg2: #ffffff;
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	body {
+        --text: #ffffff;
+        --bg1: #070908;
+        --bg2: #101412;
+        --bg3: rgba(255,255,255,0.1);
+        --gray: #545c58;
+	}
+    section.dark, section.gray {
+        --bg1: #101412;
+        --bg2: #070908;
+        --a1: #baf27d;
+        --a2: #33cf90;
+        --a3: rgba(186,242,125,0.15);
+        --a4: rgba(51,207,145,0.15);
+    }
+    .hero, aside.hero-image {
+        background-image: url('https://rachaelthemes.github.io/tumblr/images/hero-light.svg') !important;
+    }
+}
+
+/* Hide Tumblr Stuff */
+
+.tmblr-iframe, .follow-teaser {
+	display: none !important;
+}
