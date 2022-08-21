@@ -101,6 +101,11 @@ article {
     margin-bottom: var(--pad2);
 }
 
+.post-reblog-item a, .post-caption a {
+    border-bottom: 1px var(--text) solid;
+    padding-bottom: 2px;;
+}
+
 /* Post Header */
 
 .post-header {
