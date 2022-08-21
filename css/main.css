@@ -554,7 +554,7 @@ section#newtheme .section-title h2 {
 }
 
 .theme-container {
-    border-radius: 0 0 10;x 10px;
+    border-radius: 0 0 10px 10px;
     overflow: hidden;
 }
 
