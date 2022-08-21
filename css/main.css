@@ -154,10 +154,6 @@ a.deactivated {
     cursor: default !important; 
 }
 
-.post-reblog-item a, .post-caption a { 
-    text-decoration: underline;
-}
-
 a.button {
     white-space: nowrap;
     padding: 6px 15px;
@@ -557,14 +553,13 @@ section#newtheme .section-title h2 {
     background: var(--a1);
 }
 
-.theme-container img {
-    max-width: 100%;
+.theme-container {
+    border-radius: 0 0 10;x 10px;
+    overflow: hidden;
 }
 
-.theme-footer {
-    height: 20px;
-    background: var(--bg3);
-    border-radius: 0 0 10px 10px;
+.theme-container img {
+    max-width: 100%;
 }
 
 .theme-details {
