@@ -1,73 +1,52 @@
-/* Fonts (Ellograph CF by Connary Fagen) */
+/* Fonts */
 
 @font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-200.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-200-italic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-300.ttf') format('truetype');
+    font-family: 'IBMPlexMono';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/IBMPlexMono-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-300-italic.ttf') format('truetype');
+    font-family: 'IBMPlexMono';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/IBMPlexMono-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-400.ttf') format('truetype');
+    font-family: 'IBMPlexMono';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/IBMPlexMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-400-italic.ttf') format('truetype');
+    font-family: 'IBMPlexMono';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/IBMPlexMono-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-600.ttf') format('truetype');
+    font-family: 'IBMPlexMono';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/IBMPlexMono-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-600-italic.ttf') format('truetype');
+    font-family: 'IBMPlexMono';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/IBMPlexMono-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-700.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'IBMPlexMono';
+    src: url('https://rachaelthemes.github.io/tumblr/fonts/IBMPlexMono-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'ellograph-cf';
-    src: url('https://rachaelthemes.github.io/tumblr/fonts/ellograph-cf-700-italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
 }
 
 /* Root */
@@ -77,32 +56,23 @@
     --pad1: 50px;
     --pad2: 100px;
     --pad3: 200px;
-    --text: #070908;
+    --text: #08080a;
     --bg1: #ffffff;
-    --bg2: #f6f8f5;
-    --bg3: rgba(0,0,0,0.05);
-    --gray: #acb0ae;
-    --a1: #33cf90;
-    --a2: #baf27d;
-    --a3: rgba(51,207,145,0.15);
-    --a4: rgba(186,242,125,0.15);
+    --bg2: #eef2f7;
+    --bg3: rgba(0,0,0,0.1);
+    --gray: #5b7083;
+    --a1: #4d76ee;
+    --a2: #a2b7f6;
+    --a3: rgba(77,118,239,0.15);
 }
 
 section.dark {
     --text: #ffffff;
-    --bg1: #070908;
-    --bg2: #101412;
-    --bg3: rgba(255,255,255,0.05);
-    --gray: #545c58;
-    --a1: #baf27d;
-    --a2: #33cf90;
-    --a3: rgba(186,242,125,0.15);
-    --a4: rgba(51,207,145,0.15);
-}
-
-section.gray {
-    --bg1: #f6f8f5;
-    --bg2: #ffffff;
+    --bg1: #1f262b;
+    --bg2: #1f262b;
+    --bg3: rgba(255,255,255,0.1);
+    --gray: #858c92;
+    --a3: rgba(77,118,239,0.3);
 }
 
 /* Dark Mode */
@@ -110,21 +80,13 @@ section.gray {
 @media (prefers-color-scheme: dark) {
 	body {
         --text: #ffffff;
-        --bg1: #070908;
-        --bg2: #101412;
+        --bg1: #151a1e;
+        --bg2: #1f262b;
         --bg3: rgba(255,255,255,0.1);
-        --gray: #545c58;
+        --gray: #858c92;
 	}
-    section.dark, section.gray {
-        --bg1: #101412;
-        --bg2: #070908;
-        --a1: #baf27d;
-        --a2: #33cf90;
-        --a3: rgba(186,242,125,0.15);
-        --a4: rgba(51,207,145,0.15);
-    }
-    .hero, aside.hero-image {
-        background-image: url('https://rachaelthemes.github.io/tumblr/images/hero-light.svg') !important;
+    .hero {
+        background-image: url('https://rachaelthemes.github.io/tumblr/images/hero-dark.svg') !important;
     }
 }
 
@@ -132,10 +94,16 @@ section.gray {
 
 body {
     margin: 0;
-    font: 16px/1.5em ellograph-cf, monospace;
-    font-weight: 200;
+    font: 16px/1.6em IBMPlexMono, monospace;
     background: var(--bg1);
     color: var(--text);
+    -moz-font-feature-settings: "salt";
+    -webkit-font-feature-settings: "salt";
+    font-feature-settings: "salt";
+}
+
+b, strong {
+    font-weight: 600;
 }
 
 /* Links */
@@ -163,11 +131,10 @@ a.button {
     border: 3px var(--text) solid;
     text-transform: uppercase;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 a.button:hover {
-    color: var(--a1);
     border-color: var(--a1);
 }
 
@@ -275,7 +242,6 @@ a.logo {
     flex-flow: row nowrap;
     align-items: center;
     font-size: 1.375em;
-    font-weight: 600;
     padding: 5px;
     margin-left: -5px;
 }
@@ -285,7 +251,7 @@ a.logo {
     margin-right: 25px;
 }
 
-a.logo .a1, a.logo .a2 {
+a.logo .a1 {
     fill: var(--text);
 }
 
@@ -297,10 +263,6 @@ a.logo:hover .a1 {
     fill: var(--a1);
 }
 
-a.logo:hover .a2 {
-    fill: var(--a2);
-}
-
 /* Header Navigation */
 
 nav a {
@@ -308,7 +270,6 @@ nav a {
     margin-left: var(--pad0);
     padding: 8px 10px;
     font-size: 1.125em;
-    font-weight: 400;
 }
 
 nav a:hover {
@@ -336,7 +297,7 @@ nav a.follow {
     border: 3px var(--text) solid;
     text-transform: uppercase;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 600;
     margin-left: calc(var(--pad0) / 2 * 3);
 }
 
@@ -394,7 +355,6 @@ nav a.follow:hover {
 	font-size: 1.5em;
 	line-height: 1.5em;
 	text-transform: uppercase;
-	font-weight: 500;
 	letter-spacing: 1.5px;
 }
 
@@ -418,10 +378,10 @@ section {
     padding: var(--pad2);
     border-radius: 10px;
     background: var(--bg2);
-    background-image: url('https://rachaelthemes.github.io/tumblr/images/hero-dark.svg');
-    background-size: 32%;
-    background-position: 94% 8%;
+    background-size: 48%;
+    background-position: 103% 54%;
     background-repeat: no-repeat;
+    background-image: url('https://rachaelthemes.github.io/tumblr/images/hero-light.svg');
 }
 
 .hero-left {
@@ -430,11 +390,12 @@ section {
 
 h1.hero-title {
     margin: -5px 0 0 0;
-    font-size: 2.875vw;
+    font-size: 2.75vw;
     font-weight: 300;
 }
 
 h1.hero-title b {
+    font-weight: 600;
     color: var(--a1);
 }
 
@@ -451,6 +412,7 @@ section#updates {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-right: 4px;
 }
 
 .section-title {
@@ -462,23 +424,24 @@ section#updates {
 }
 
 .section-title h2 {    
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 0;
     margin: 0 0 0 -4px;
     transform: rotate(-90deg);
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 3px;
     white-space: nowrap;
     word-spacing: -10px;
     color: var(--a1);
 }
 
 a.update {
-    width: calc((100% / 3) - var(--pad2) - 46px - (26px / 3));
-    border: 3px var(--text) solid;
-    border-radius: 10px;
+    width: calc((100% / 3) - var(--pad2) - 62px - (26px / 3));
     padding: 0 calc(var(--pad0) + 20px) calc(var(--pad0) + 20px);
+    border-radius: 10px;
+    border: 3px var(--text) solid;
+    box-shadow: 2px 2px 0 0px var(--text), 4px 4px 0 0 var(--text), 6px 6px 0 0 var(--text);
 }
 
 a.update .u-date {
@@ -486,25 +449,27 @@ a.update .u-date {
     background: var(--bg1);
     border: 3px var(--text) solid;
     border-radius: 6px;
-    padding: 3px 11px;
+    padding: 2px 11px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.875em;
-    margin-top: -20px;
+    margin-top: -19px;
     margin-right: calc(var(--pad0) * -1);
 }
 
 a.update h5 {
-    font-weight: 700;
+    font-weight: 600;
     margin: calc(var(--pad0) + 15px) 0 0;
     word-break: break-word;
 }
 
-a.update:hover, a.update:hover .u-date {
+a.update:hover {
     border-color: var(--a1);
+    box-shadow: 2px 2px 0 0px var(--a1), 4px 4px 0 0 var(--a1), 6px 6px 0 0 var(--a1);
 }
 
 a.update:hover .u-date {
+    border-color: var(--a1);
     color: var(--a1);
 }
 
@@ -526,19 +491,22 @@ section#newtheme {
 }
 
 section#newtheme .section-title h2 {
-    color: var(--a2);
+    color: var(--a1);
 }
 
 .theme-viewer {
-    width: 50%;
+    width: calc(50% - 6px);
     line-height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px var(--text) solid;
 }
 
 .theme-header {
     height: 10px;
     padding: 10px;
-    background: var(--bg3);
     border-radius: 10px 10px 0 0;
+    border-bottom: 3px var(--text) solid;
 }
 
 .theme-circle {
@@ -551,11 +519,6 @@ section#newtheme .section-title h2 {
 
 .theme-circle:nth-child(1) {
     background: var(--a1);
-}
-
-.theme-container {
-    border-radius: 0 0 10px 10px;
-    overflow: hidden;
 }
 
 .theme-container img {
@@ -577,13 +540,13 @@ h3.theme-title {
 .theme-badge {
     float: right;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     word-spacing: -2px;
-    color: var(--a1);
-    background: var(--a3);
+    color: var(--text);
+    background: var(--a1);
     padding: 2px 9px;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5rem;
     margin: 18px 0px -18px 20px;
 }
@@ -594,7 +557,11 @@ p.theme-description {
 
 p.theme-updates {
     color: var(--gray);
-    margin: 0 0 50px 0;
+    margin: 0;
+}
+
+#newtheme a.button {
+    margin-top: var(--pad1);
 }
 
 p.theme-updates b {
@@ -608,11 +575,11 @@ section#footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    font-size: 0.875em;
+    font-size: 0.875rem;
 }
 
 section#footer h4 {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--a1);
     margin: 0 0 15px;
     text-transform: uppercase;
@@ -622,6 +589,7 @@ section#footer h4 {
 section#footer p {
     margin: 0;
     line-height: 1.7em;
+    font-size: 0.875rem;
 }
 
 .footer-text {
@@ -646,12 +614,12 @@ section#footer p {
     height: 4px;
     width: 4px;
     border-radius: 100%;
-    background: var(--a2);
-    margin: 10px 12px 0 2px;
+    background: var(--a1);
+    margin: 10px 13px 0 5px;
 }
 
 .footer-links a:hover {
-    color: var(--a2);
+    color: var(--a1);
 }
 
 /* Page Footer */
@@ -664,9 +632,9 @@ footer {
     padding: var(--pad0) var(--pad2);
     background: var(--bg2);
     color: var(--gray);
-    font-weight: 400;
     text-transform: uppercase;
-    font-size: 0.875em;
+    font-size: 0.75em;
+    letter-spacing: 0.5px;
 }
 
 footer b {
@@ -851,7 +819,7 @@ footer b {
         flex-flow: column nowrap;
     }
     .theme-viewer {
-        width: 100%;
+        width: calc(100% - 6px);
         margin-bottom: var(--pad2);
     }
     .theme-details {
