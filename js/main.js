@@ -21,17 +21,6 @@ jQuery(document).ready(function() {
 });
 
 window.onload = function() {
-    $('#screen').fadeOut(200);
+    $('.hero').removeClass('waiting');
+    $('img').css('opacity', '1');
 };
-
-$(document).on("click", "a.in", function() {
-    var redirect = $(this).attr("href");
-    if (!redirect || redirect[0] === "#") {
-        location.hash = redirect;
-        return;
-    }
-    $("#screen").fadeIn(200, function() {
-        location = redirect;
-       });
-    return false;
-});
