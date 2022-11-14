@@ -521,6 +521,7 @@ section#newtheme .section-title h2 {
     padding: 10px;
     border-radius: 10px 10px 0 0;
     border-bottom: 3px var(--text) solid;
+    display: flex;
 }
 
 .theme-circle {
@@ -533,6 +534,7 @@ section#newtheme .section-title h2 {
 
 .theme-circle:nth-child(1) {
     background: var(--a1);
+    margin-right: 9px
 }
 
 .theme-container img {
