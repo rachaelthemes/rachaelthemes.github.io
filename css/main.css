@@ -68,8 +68,8 @@
 
 section.dark {
     --text: #ffffff;
-    --bg1: #1f262b;
-    --bg2: #1f262b;
+    --bg1: #151a1e;
+    --bg2: #151a1e;
     --bg3: rgba(255,255,255,0.1);
     --gray: #858c92;
     --a3: rgba(77,118,239,0.3);
@@ -78,13 +78,20 @@ section.dark {
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
-	body {
+    body {
         --text: #ffffff;
         --bg1: #151a1e;
         --bg2: #1f262b;
         --bg3: rgba(255,255,255,0.1);
         --gray: #858c92;
-	}
+    }
+    section.dark {
+        --text: #ffffff;
+        --bg1: #1f262b;
+        --bg2: #1f262b;
+        --bg3: rgba(255,255,255,0.1);
+        --gray: #858c92;
+    }
     .hero {
         background-image: url('https://rachaelthemes.github.io/tumblr/images/hero-dark.svg') !important;
     }
