@@ -1,4 +1,3 @@
-
 /* Posts Section */
 
 section#posts {
@@ -6,8 +5,8 @@ section#posts {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-start;
+    padding: var(--pad2) var(--pad1) calc(var(--pad2) + 17px) var(--pad1);
     background: var(--bg2);
-    padding: var(--pad2) var(--pad1);
 }
 
 .sidebar, .posts {
@@ -17,7 +16,8 @@ section#posts {
 aside, article {
     background: var(--bg1);
     border-radius: 10px;
-    box-shadow: 0 0 4px -3px var(--gray);
+    border: 3px var(--text) solid;
+    box-shadow: 14px 14px 0 0 var(--a1), 14px 14px 0 3px var(--text);
 }
 
 /* Posts Right Sidebar */
@@ -31,19 +31,18 @@ aside {
     width: 370px;
 }
 
-aside.posts-search {
-    border-radius: 10px 10px 0 0;
+.posts-search {
+    border-bottom: 3px var(--text) solid;
 }
 
-aside.posts-search form input {
+.posts-search form input {
     padding: 30px 40px;
-    font: 14px/1em ellograph-cf, monospace;
-    font-weight: 200;
+    font: 14px/1em 'IBMPlexMono', monospace;
+    font-weight: 400;
     color: var(--text) !important;
     width: calc(100% - 80px);
     border-radius: 10px 10px 0 0;
     border: none;
-    border-bottom: 1px var(--bg2) solid;
     background: var(--bg1);
 }
 
@@ -56,30 +55,25 @@ textarea:-webkit-autofill {
   -webkit-text-fill-color: var(--text);
 }
 
-aside.posts-search form input::placeholder {
+.posts-search form input::placeholder {
     color: var(--gray);
     opacity: 1;
 }
 
-aside.posts-search form input:focus-visible {
+.posts-search form input:focus-visible {
     outline: none !important;
 }
 
 aside.hero-image {
-    background-image: url(https://rachaelthemes.github.io/tumblr/images/hero-dark.svg);
-    background-size: 50%;
-    background-position: 92% 220%;
-    background-repeat: no-repeat;
-    height: 330px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
-    border-radius: 0 0 10px 10px;
+    justify-content: flex-start;
 }
 
 h2.hero-title {
-    margin: 30px 50px 0 40px;
-    font-size: 1.35em;
+    margin: 30px 50px 30px 40px;
+    font-size: 1.375em;
+    line-height: 1.5em;
     font-weight: 300;
 }
 
@@ -99,6 +93,7 @@ article {
     overflow: hidden;
     word-wrap: break-word;
     margin-bottom: var(--pad2);
+    padding-bottom: 5px;
 }
 
 .post-reblog-item a:not(.post_media_photo_anchor):not(.post-tumblelog-name), .post-caption a:not(.post_media_photo_anchor):not(.post-tumblelog-name) {
@@ -114,7 +109,7 @@ article {
     flex-flow: nowrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px var(--bg2) solid;
+    border-bottom: 3px var(--text) solid;
 }
 
 .post-header-icon {
@@ -129,7 +124,6 @@ article {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.5px;
-    color: var(--gray);
 }
 
 .post-header-info b {
@@ -141,7 +135,7 @@ article {
 
 .post-reblog-item {
     padding: 30px 30px 0;
-    border-top: 1px var(--bg2) solid;
+    border-top: 3px var(--text) solid;
 }
 
 .post-reblog-item:first-child {
@@ -206,10 +200,9 @@ article h1, article h2 {
 }
 
 h2.post-title { 
-    font-size: 1.75em; 
-    font-weight: 700;
+    font-size: 1.75em;
     padding: 20px 30px 0;
-    margin: 0 0 -0.5rem 0;
+    margin: 0.5rem 0 0 0;
     line-height: 140%;
 }
 
@@ -227,15 +220,15 @@ h2.post-title {
 }
 
 article.post.alert h2.post-title {
-    padding: 30px;
+    padding-bottom: 20px;
 	font-size: 1.625rem;
 }
 
 /* Blockquotes */
 
 .post-reblog-list blockquote, .post-caption blockquote {
-    border-left: 2px var(--a2) solid;
-    margin: 1em 0 1em 20px;
+    border-left: 3px var(--a1) solid;
+    margin: 1em 0 1em 19px;
     padding-left: 20px;
 }
 
@@ -327,12 +320,11 @@ img.ask-avatar {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
-    width: calc (100% - 60px);
-    padding: 20px 30px;
+    align-items: flex-end;
+    width: calc(100% - 60px);
+    padding: 5px 30px 20px 30px;
     position: relative;
     line-height: 1em;
-    border-top: 1px var(--bg2) solid;
 }
 
 .post-tags a {
@@ -340,8 +332,11 @@ img.ask-avatar {
     margin-right: 10px;
     font-size: 0.875em;
     color: var(--gray);
-    font-weight: 400;
     line-height: 1.5em;
+}
+
+.post-tags a:hover {
+    color: var(--a1);
 }
 
 .post-tags a svg {
@@ -350,21 +345,19 @@ img.ask-avatar {
 }
 
 .post-controls {
-    margin-left: 10px;
+    margin: 0 0 0 10px;
     flex-shrink: 0;
 }
 
 .post-controls a {
     display: inline-block;
-    font-size: 1.125em;
-    color: var(--gray);
+    font-size: 1.25em;
+    color: var(--text);
     margin-left: 20px;
 }
 
-.post-controls a svg path {
-    stroke-width: 10px;
-    stroke-miterlimit: 10;
-    stroke: var(--gray);
+.post-controls a:hover svg path {
+    fill: var(--a1);
 }
 
 /* Pagination */
@@ -372,12 +365,23 @@ img.ask-avatar {
 .pagination {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.pagination a.button {
+    background: var(--bg1);
+    margin: 0 var(--pad1);
+}
+
+.pagination a.button:hover {
+    color: #fff;
+    background: var(--a1);
+    border-color: var(--a1);
 }
 
 .prev:not(:link), 
 .next:not(:link) {
-    visibility: hidden;
+    display: none;
 }
 
 /* SCREEN SIZE */
@@ -406,14 +410,25 @@ img.ask-avatar {
         margin: 0;
     }
     article {
-        margin-top: var(--pad2);
-        margin-bottom: 0;
         border-radius: 0;
+        box-shadow: none;
+        border-width: 0;
+        max-width: 100%;
+        margin: var(--pad1) 0 0;
+    }
+    .post-header {
+        border-bottom: none;
+    }
+    .posts > article:last-child {
+        border-bottom-width: 3px;
     }
     .post-date-notes span {
         display: none;
     }
     .pagination {
         padding: var(--pad2);
+    }
+    .post-reblog-item {
+        border-top: 1px var(--bg2) solid;
     }
 }
