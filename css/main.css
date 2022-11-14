@@ -217,6 +217,18 @@ ul li {
     background: var(--bg1);
 }
 
+img {
+    opacity: 0;
+}
+
+.hero, img {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
 /* Main Container */
 
 main {
@@ -389,6 +401,11 @@ section {
     background-position: 103% 54%;
     background-repeat: no-repeat;
     background-image: url('https://rachaelthemes.github.io/tumblr/images/hero-light.svg');
+    box-shadow: inset 0 0 0 1000px transparent;
+}
+
+.hero.waiting {
+    box-shadow: inset 0 0 0 1000px var(--bg2);
 }
 
 .hero-left {
